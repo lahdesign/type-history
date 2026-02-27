@@ -1,0 +1,139 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #d9d9d9;
+}
+
+/* 12 Column Grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". a a a a . . d d d d ."
+    ". b b b c c . d d d d ."
+    ". e e e e e e e e e e ."
+    ". . . . . . . . f f f g"
+    ". . . . . . . . . . . .";
+  max-width: 1722px;
+  min-height: 1117px;
+  margin: 0 auto;
+}
+
+/* Grid Areas */
+.a { grid-area: a; }
+.b { grid-area: b; }
+.c { grid-area: c; }
+.d { grid-area: d; }
+.e { grid-area: e; }
+.f { grid-area: f; }
+.g { grid-area: g; }
+
+/* Title */
+.a {
+  padding-left: 45px;
+}
+
+.css-proposed-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 128px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* Date */
+.b {
+  padding-left: 101px;
+  padding-top: 170px;
+}
+
+.date {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* Opening Bracket */
+.c {
+  padding-left: 16px;
+  padding-top: 155px;
+}
+
+.curly-bracket-open {
+  font-family: 'Playfair Display', serif;
+  font-size: 200px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* Image */
+.d {
+  position: relative;
+  padding-left: 120px;
+}
+
+.image-background {
+  position: absolute;
+  inset: 0;
+  background-color: #d9d9d9;
+}
+
+.code-img {
+  position: relative;
+  width: 686px;
+  height: 493px;
+  object-fit: cover;
+  opacity: 0.69;
+}
+
+/* Content */
+.e {
+  padding-left: 101px;
+  padding-right: 40px;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #000;
+}
+
+.author {
+  font-weight: 900;
+}
+
+.e ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+/* Bottom Text */
+.f {
+  padding-right: 40px;
+  padding-bottom: 86px;
+  text-align: right;
+  font-size: 32px;
+  color: #000;
+}
+
+.emphasis {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+/* Closing Bracket */
+.g {
+  padding-left: 34px;
+  padding-bottom: 86px;
+}
+
+.curly-bracket-close {
+  font-family: 'Playfair Display', serif;
+  font-size: 200px;
+  font-weight: 400;
+  color: #000;
+}
