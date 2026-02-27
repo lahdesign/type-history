@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Proposed, 1994</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container">
-      <section class="a">
+      <section class="title">
         <h1 class="css-proposed-title">CSS Proposed</h1>
         <p class="date">October 10, 1994</p>
       </section>
@@ -16,12 +17,11 @@
         <p class="curly-text">{</p>
         </section>
       
-      <div className="d">
-        <div className="image-background"></div>
-        <img src={imgRectangle1} alt="CSS code example" class="code-img" />
-      </div>
+      <section class="image">
+        <img src="assets/css-screenshot.png" alt="CSS code example" class="code-img" />
+      </section>
       
-      <div className="e">
+      <section className="main">
         <p>Typographic content becomes designable</p>
         <p>&nbsp;</p>
         <p>
@@ -39,9 +39,9 @@
           <li>hierarchy</li>
           <li>layout control</li>
         </ul>
-      </div>
+      </section>
       
-      <section class="f">
+      <section class="highlights">
         <p>
           <span class="emphasis">Before CSS </span>
           <span>typography was mostly browser defaults.</span>
@@ -53,8 +53,8 @@
         <p>This is the real birth of web typography as a design discipline.</p>
     </section>
       
-      <section class="g">
-        <p class="curly-bracket-close">}</p>
+      <section class="closing-curly">
+        <p class="curly-text">}</p>
       </section>
     </div>
 </body>
